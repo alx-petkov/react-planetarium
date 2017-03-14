@@ -1,4 +1,10 @@
+import { LANGUAGES } from '../constants/languages';
+
 export default {
+  language: {
+    active: LANGUAGES.bg,
+    other: LANGUAGES.en,
+  },
   fuelSavings: {
     newMpg: '',
     tradeMpg: '',
