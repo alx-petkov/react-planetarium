@@ -4,6 +4,8 @@ $vin-green: #60b044;
 $vin-red: #ff0000;
 
 /* Styles */
+
+// Homepage component styles
 .left_column,
 .right_column {
   background-color: pink;
@@ -21,4 +23,28 @@ $vin-red: #ff0000;
   width: 50%;
   text-align: center;
   display: inline-block;
+}
+
+// Layout component styles
+.main-menu a {
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid blue;
+  border-left: none;
+  text-transform: capitalize;
+  text-decoration: none;
+
+  &.active{
+    background: silver;
+  }
+}
+
+.details-menu a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+
+  &.active{
+    font-weight: bold;
+  }
 }

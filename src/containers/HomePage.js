@@ -6,7 +6,7 @@ import Home from '../components/Home/Home';
 
 export const HomePage = (props) => {
   return (
-    <Home lang={props.language.active} {...props}  />
+    <Home {...props}  />
   );
 };
 
