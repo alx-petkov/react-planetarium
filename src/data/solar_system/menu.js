@@ -5,14 +5,14 @@
 export const menu = {
   main: [
     { EN: 'summary', BG: 'резюме'} ,
-    { EN: 'brown_dwarf', BG:  'кафяво джудже'} ,
-    { EN: 'red_dwarf', BG: 'червено джудже'} ,
-    { EN: 'white_dwarf', BG: 'бяло джудже'} ,
-    { EN: 'supernovae', BG: 'супернова'} ,
-    { EN: 'black_hole', BG: 'черна дупка'} ,
-    { EN: 'blue-giant', BG: 'син гигант'} ,
-    { EN: 'summary', BG: 'резюме'} ,
-    { EN: 'summary', BG: 'резюме'} ,
+    { EN: 'sun', BG: 'слънце'} ,
+    { EN: 'mercury', BG: 'меркурий'} ,
+    { EN: 'venus', BG: 'венера'} ,
+    { EN: 'earth', BG: 'земя'} ,
+    { EN: 'mars', BG: 'марс'} ,
+    { EN: 'asteroids', BG: 'астероиди'} ,
+    { EN: 'jupiter', BG: 'юпитер'} ,
+    { EN: 'saturn', BG: 'сатурн'} ,
   ],
   submenu: [
     { EN: 'mass', BG: 'маса'} ,

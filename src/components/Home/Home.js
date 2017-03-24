@@ -3,11 +3,7 @@ import {Link} from 'react-router';
 import LanguageSwitch from '../shared/LanguageSwitch';
 
 class Home extends React.Component {
-  /*componentWillMount() {
-    const test = 'hello world!';
-    console.log(test);
-  }*/
-
+  // toDo make Link names bi-lingual!
   render(){
 
     const { changeLanguage } = this.props.actions;
@@ -16,9 +12,9 @@ class Home extends React.Component {
     return (
       <main>
         <nav className="left_column">
-          <Link className="home_link" to="solar-system">SOLAR SYSTEM</Link>
-          <Link className="home_link" to="stars">STARS</Link>
-          <Link className="home_link" to="universe">UNIVERSE</Link>
+          <Link className="home_link" to="solar_system/total">SOLAR SYSTEM</Link>
+          <Link className="home_link" to="stars/total">STARS</Link>
+          <Link className="home_link" to="universe/total">UNIVERSE</Link>
         </nav>
 
         <div className="central_column"> {/* ToDo symbolic model of the solar system */}
@@ -26,9 +22,9 @@ class Home extends React.Component {
         </div>
 
         <nav className="right_column">
-          <Link className="home_link" to="sciense">SCIENCE</Link>
-          <Link className="home_link" to="exploration">EXPLORATION</Link>
-          <Link className="home_link" to="fun">FUN</Link>
+          <Link className="home_link" to="sciense/total">SCIENCE</Link>
+          <Link className="home_link" to="exploration/total">EXPLORATION</Link>
+          <Link className="home_link" to="fun/total">FUN</Link>
         </nav>
         <LanguageSwitch
           language={language.active}

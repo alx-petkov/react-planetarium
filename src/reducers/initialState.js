@@ -5,6 +5,9 @@ export default {
     active: LANGUAGES.bg,
     other: LANGUAGES.en,
   },
+  layout: {
+    menu: {},
+  },
   fuelSavings: {
     newMpg: '',
     tradeMpg: '',
