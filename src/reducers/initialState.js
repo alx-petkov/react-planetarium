@@ -7,6 +7,7 @@ export default {
   },
   layout: {
     menu: {},
+    fundamentals: [],
   },
   fuelSavings: {
     newMpg: '',

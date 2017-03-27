@@ -12,9 +12,9 @@ class Home extends React.Component {
     return (
       <main>
         <nav className="left_column">
-          <Link className="home_link" to="solar_system/total">SOLAR SYSTEM</Link>
-          <Link className="home_link" to="stars/total">STARS</Link>
-          <Link className="home_link" to="universe/total">UNIVERSE</Link>
+          <Link className="home_link" to="solar_system/index">SOLAR SYSTEM</Link>
+          <Link className="home_link" to="stars/index">STARS</Link>
+          <Link className="home_link" to="universe/index">UNIVERSE</Link>
         </nav>
 
         <div className="central_column"> {/* ToDo symbolic model of the solar system */}
@@ -22,9 +22,9 @@ class Home extends React.Component {
         </div>
 
         <nav className="right_column">
-          <Link className="home_link" to="sciense/total">SCIENCE</Link>
-          <Link className="home_link" to="exploration/total">EXPLORATION</Link>
-          <Link className="home_link" to="fun/total">FUN</Link>
+          <Link className="home_link" to="sciense/index">SCIENCE</Link>
+          <Link className="home_link" to="exploration/index">EXPLORATION</Link>
+          <Link className="home_link" to="fun/index">FUN</Link>
         </nav>
         <LanguageSwitch
           language={language.active}

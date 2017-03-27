@@ -16,8 +16,7 @@ class Layout extends React.Component {
   }
 
   render() {
-
-    const { category, object } = this.props.params;
+    const { category, item } = this.props.params;
     const { menu, language } = this.props;
 
     return (
@@ -26,14 +25,14 @@ class Layout extends React.Component {
         <div className="main-menu">
           <IndexLink to="/">Home</IndexLink>
           {
-            menu.main.map((planet, index) =>{
+            menu.main.map((item, index) =>{
               return (
                 <Link
                 key={index}
-                to={`/${category}/${planet.EN}`}
-                className={planet.en === object ? 'active' : ''}
+                to={`/${category}/${item.EN}`}
+                className={item.en === item ? 'active' : ''}
                 >
-                  { planet[language.active] }
+                  { item[language.active] }
                   </Link>
               );
             })
@@ -45,7 +44,7 @@ class Layout extends React.Component {
               return (
                 <Link
                 key={index}
-                to={`/${category}/${object}/${subitem.EN}`}
+                to={`/${category}/${item}/${subitem.EN}`}
                 activeClassName="active"
                 >
                   { subitem[language.active] }
