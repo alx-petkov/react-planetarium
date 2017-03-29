@@ -4,27 +4,25 @@ import FundamentalsView from '../FundamentalsView';
 class MainSection extends React.Component {
 
   componentDidMount() {
+    // console.log('didMount test');
     const { params, actions } = this.props;
-    // console.log('hi there', params.category, params.item);
-    //if (!params.detail) { //ToDo update fundamentals on location change
+    actions.loadBasics(params.category, params.item);
+  }
 
-      actions.loadFundamentals(params.category, params.item);
-    //}
+  componentWillReceiveProps(nextProps) {
+    const { params, actions } = this.props;
+    //    console.log('willRecieve TEST');
+    // console.log('hi there', params.category, params.item);
+    if (params.item != nextProps.params.item) { //ToDo update fundamentals on location change
+
+      actions.loadBasics(params.category, nextProps.params.item);
+    }
   }
 
   render(){
-    const { params } = this.props;
 
-    // console.log(this.props);
     return (
-      params.detail ?
-      <div>
-        <h1>Has a detail parameter</h1>
 
-        <h2>Get Started</h2>
-
-      </div>
-      :
       <FundamentalsView {...this.props} />
 
     );

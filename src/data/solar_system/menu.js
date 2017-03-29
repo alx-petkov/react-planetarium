@@ -4,7 +4,7 @@
 
 export const menu = {
   main: [
-    { EN: 'summary', BG: 'резюме'} ,
+    { EN: 'index', BG: 'резюме'} ,
     { EN: 'sun', BG: 'слънце'} ,
     { EN: 'mercury', BG: 'меркурий'} ,
     { EN: 'venus', BG: 'венера'} ,

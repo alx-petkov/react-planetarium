@@ -1,30 +1,28 @@
-
-export const earth = //{
+export const index = //{
   //fundamentals:
   [
     {
-      detail: 'orbit',
-      title: { EN: 'distance from the sun', BG: 'разстояние от слънцето' },
+      detail: 'mass',
+      title: { EN: 'index fun 1', BG: 'разстояние от слънцето' },
+      core: { EN: '8.14 light minutes', BG: '8.14 светлинни минути' },
+      tooltip: { EN: 'additional info', BG: 'допълнителна информация'},
+    },
+    {
+      detail: 'gravity',
+      title: { EN: 'index fun 2', BG: 'разстояние от слънцето' },
       core: { EN: '8.14 light minutes', BG: '8.14 светлинни минути' },
       tooltip: { EN: 'additional info', BG: 'допълнителна информация'},
     },
     {
       detail: 'orbit',
-      title: { EN: 'distance from the sun', BG: 'разстояние от слънцето' },
+      title: { EN: 'index fun 3', BG: 'разстояние от слънцето' },
       core: { EN: '8.14 light minutes', BG: '8.14 светлинни минути' },
       tooltip: { EN: 'additional info', BG: 'допълнителна информация'},
     },
     {
-      detail: 'orbit',
-      title: { EN: 'distance from the sun', BG: 'разстояние от слънцето' },
-      core: { EN: '8.14 light minutes', BG: '8.14 светлинни минути' },
-      tooltip: { EN: 'additional info', BG: 'допълнителна информация'},
-    },
-    {
-      detail: 'orbit',
-      title: { EN: 'distance from the sun', BG: 'разстояние от слънцето' },
+      detail: 'satelites',
+      title: { EN: 'index fun 4', BG: 'разстояние от слънцето' },
       core: { EN: '8.14 light minutes', BG: '8.14 светлинни минути' },
       tooltip: { EN: 'additional info', BG: 'допълнителна информация'},
     },
   ];
-//};

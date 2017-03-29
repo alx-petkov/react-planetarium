@@ -1,6 +1,6 @@
 import { LAYOUT_ACTIONS } from '../constants/actionTypes';
 import selectMenu from '../utils/menuHelper';
-import selectFundamentals from '../utils/fundamentalsHelper';
+import selectBasics from '../utils/basicsHelper';
 import objectAssign from 'object-assign';
 import initialState from './initialState';
 
@@ -15,8 +15,8 @@ export function layoutReducer(state = initialState.layout, action) {
   switch (action.type) {
     case LAYOUT_ACTIONS.LOAD_MENU :
       return objectAssign({}, state, { menu: selectMenu(action.section) });
-    case LAYOUT_ACTIONS.LOAD_FUNDAMENTALS:
-      return objectAssign({}, state, { fundamentals: selectFundamentals(action.section, action.item) });
+    case LAYOUT_ACTIONS.LOAD_BASICS:
+      return objectAssign({}, state, { basics: selectBasics(action.section, action.item) });
     default:
       return state;
   }

@@ -7,9 +7,9 @@ export function loadMenu(section) {
   };
 }
 
-export function loadFundamentals(section, item) {
+export function loadBasics(section, item) {
   return {
-    type: LAYOUT_ACTIONS.LOAD_FUNDAMENTALS,
+    type: LAYOUT_ACTIONS.LOAD_BASICS,
     section,
     item,
   };

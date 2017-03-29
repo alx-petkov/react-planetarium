@@ -18,7 +18,7 @@ LayoutContainer.propTypes = {
 function mapStateToProps(state) {
   return {
     language: state.language,
-    fundamentals: state.layout.fundamentals,
+    basics: state.layout.basics,
   };
 }
 

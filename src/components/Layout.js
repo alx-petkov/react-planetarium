@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
+// import * as _ from 'lodash';
 // import { menu } from '../data/solar-system/menu';
 
 // This is a class-based component because the current
@@ -18,9 +19,9 @@ class Layout extends React.Component {
   render() {
     const { category, item } = this.props.params;
     const { menu, language } = this.props;
+        // console.log('test', menu ? 'valid': 'invalid' );
 
     return (
-      menu ?
       <div>
         <div className="main-menu">
           <IndexLink to="/">Home</IndexLink>
@@ -55,7 +56,6 @@ class Layout extends React.Component {
         </div>
         {this.props.children}
       </div>
-      : ''
     );
   }
 }

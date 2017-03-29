@@ -6,8 +6,11 @@ export default {
     other: LANGUAGES.en,
   },
   layout: {
-    menu: {},
-    fundamentals: [],
+    menu: {
+      main: [],
+      submenu: [],
+    },
+    basics: [],
   },
   fuelSavings: {
     newMpg: '',

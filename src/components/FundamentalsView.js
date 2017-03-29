@@ -3,21 +3,21 @@ import React, { PropTypes } from 'react';
 
 class FundamentalsView extends React.Component {
   componentWillReceiveProps(nextProps) {
-    console.log(this.props.params, nextProps.params);
+    // console.log(this.props.params, nextProps.params);
     if (this.props.params.item !== nextProps.params.item) {
-      console.log('NOW WE GET NEW FUNDAMENTALS');
+      //console.log('NOW WE GET NEW FUNDAMENTALS');
     }
   }
 
   render(){
-    const { fundamentals, language } = this.props;
+    const { basics, language } = this.props;
     // console.log('FundamentalsView is mounted');
-    // console.log('fundView', fundamentals, language);
+    // console.log('fundView', basics);
     return (
-      fundamentals ?
+      basics ?
       <div>
         {
-          fundamentals.map((item, index) =>{
+          basics.map((item, index) =>{
             return (
               <div
               key={index}
@@ -28,16 +28,17 @@ class FundamentalsView extends React.Component {
             );
           })
         }
+        FUNDAMENTALS VIEW
       </div>
       :
-      ''
+      <div>NO BASICS TO SHOW</div>
     );
   }
 }
 
 FundamentalsView.propTypes = {
   params: PropTypes.object,
-  fundamentals: PropTypes.array,
+  basics: PropTypes.array,
   language: PropTypes.object,
 };
 
