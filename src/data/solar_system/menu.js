@@ -1,26 +1,31 @@
-// import { LANGUAGES } from '../../constants/languages';
+import { ITEMS, DETAILS } from '../../constants/solar_system';
 
 
 
 export const menu = {
   main: [
-    { EN: 'index', BG: 'резюме'} ,
-    { EN: 'sun', BG: 'слънце'} ,
-    { EN: 'mercury', BG: 'меркурий'} ,
-    { EN: 'venus', BG: 'венера'} ,
-    { EN: 'earth', BG: 'земя'} ,
-    { EN: 'mars', BG: 'марс'} ,
-    { EN: 'asteroids', BG: 'астероиди'} ,
-    { EN: 'jupiter', BG: 'юпитер'} ,
-    { EN: 'saturn', BG: 'сатурн'} ,
+    { EN: ITEMS.index, BG: 'резюме'} ,
+    { EN: ITEMS.sunn, BG: 'слънце'} ,
+    { EN: ITEMS.mercury, BG: 'меркурий'} ,
+    { EN: ITEMS.venus, BG: 'венера'} ,
+    { EN: ITEMS.earth, BG: 'земя'} ,
+    { EN: ITEMS.mars, BG: 'марс'} ,
+    { EN: ITEMS.ceres, BG: 'церера'} ,
+    { EN: ITEMS.jupiter, BG: 'юпитер'} ,
+    { EN: ITEMS.saturn, BG: 'сатурн'} ,
+    { EN: ITEMS.uranus, BG: 'уран'} ,
+    { EN: ITEMS.neptune, BG: 'нептун'} ,
+    { EN: ITEMS.pluto, BG: 'плутон'} ,
+    { EN: ITEMS.kuiper_belt, BG: 'пояс на Кайпер'} ,
+    { EN: ITEMS.oort_cloud, BG: 'облак на Оорт'} ,
   ],
   submenu: [
-    { EN: 'mass', BG: 'маса'} ,
-    { EN: 'gravity', BG: 'гравитация'} ,
-    { EN: 'satelites', BG: 'сателити'} ,
-    { EN: 'orbit', BG: 'орбита'} ,
-    { EN: 'summary', BG: 'резюме'} ,
-    { EN: 'summary', BG: 'резюме'} ,
-    { EN: 'summary', BG: 'резюме'} ,
+    { EN: DETAILS.mass, BG: 'маса'} ,
+    { EN: DETAILS.gravity, BG: 'гравитация'} ,
+    { EN: DETAILS.satelites, BG: 'сателити'} ,
+    { EN: DETAILS.orbit, BG: 'орбита'} ,
+    { EN: DETAILS.nomer1, BG: 'резюме1'} ,
+    { EN: DETAILS.nomer2, BG: 'резюме2'} ,
+    { EN: DETAILS.nomer3, BG: 'резюме3'} ,
   ]
 };
