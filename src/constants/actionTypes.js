@@ -8,4 +8,5 @@ export const LANGUAGE_ACTIONS = {
 export const LAYOUT_ACTIONS = {
   LOAD_MENU: 'LOAD_MENU',
   LOAD_BASICS: 'LOAD_BASICS',
+  LOAD_DETAIL: 'LOAD_DETAIL',
 };

@@ -26,14 +26,14 @@ class Layout extends React.Component {
         <div className="main-menu">
           <IndexLink to="/">Home</IndexLink>
           {
-            menu.main.map((item, index) =>{
+            menu.main.map((menuitem, index) =>{
               return (
                 <Link
                 key={index}
-                to={`/${category}/${item.EN}`}
-                className={item.en === item ? 'active' : ''}
+                to={`/${category}/${menuitem.EN}`}
+                className={menuitem.EN === item ? 'active' : ''}
                 >
-                  { item[language.active] }
+                  { menuitem[language.active] }
                   </Link>
               );
             })

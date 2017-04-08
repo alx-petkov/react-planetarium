@@ -14,3 +14,12 @@ export function loadBasics(section, item) {
     item,
   };
 }
+
+export function loadDetail(section, item, detail) {
+  return {
+    type: LAYOUT_ACTIONS.LOAD_DETAIL,
+    section,
+    item,
+    detail,
+  };
+}
