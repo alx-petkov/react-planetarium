@@ -22,7 +22,7 @@ export const menu = {
   submenu: [
     { EN: DETAILS.mass, BG: 'маса'} ,
     { EN: DETAILS.gravity, BG: 'гравитация'} ,
-    { EN: DETAILS.satelites, BG: 'сателити'} ,
+    { EN: DETAILS.satellites, BG: 'сателити'} ,
     { EN: DETAILS.orbit, BG: 'орбита'} ,
     { EN: DETAILS.nomer1, BG: 'резюме1'} ,
     { EN: DETAILS.nomer2, BG: 'резюме2'} ,

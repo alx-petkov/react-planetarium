@@ -17,13 +17,14 @@ class Layout extends React.Component {
   }
 
   render() {
-    const { category, item } = this.props.params;
+    const { category, item, detail } = this.props.params;
     const { menu, language } = this.props;
-        // console.log('test', menu ? 'valid': 'invalid' );
+    const menuStyle = item ? 'standard-menu' : 'switch-board';
+    const submenuStyle = detail? 'standard-submenu' : 'switch-board';
 
     return (
       <div>
-        <div className="main-menu">
+        <div className={`${category} ${menuStyle} main-menu`}>
           <IndexLink to="/">Home</IndexLink>
           {
             menu.main.map((menuitem, index) =>{
@@ -31,7 +32,7 @@ class Layout extends React.Component {
                 <Link
                 key={index}
                 to={`/${category}/${menuitem.EN}`}
-                className={menuitem.EN === item ? 'active' : ''}
+                className={`${menuitem.EN} ${menuitem.EN === item ? 'active' : ''}`}
                 >
                   { menuitem[language.active] }
                   </Link>
@@ -39,8 +40,9 @@ class Layout extends React.Component {
             })
           }
         </div>
-        <div className="details-menu">
+        <div className={`${category} ${item} ${submenuStyle} details-menu`}>
           {
+            item?
             menu.submenu.map((subitem, index) =>{
               return (
                 <Link
@@ -52,6 +54,7 @@ class Layout extends React.Component {
                 </Link>
               );
             })
+              : ''
           }
         </div>
         {this.props.children}

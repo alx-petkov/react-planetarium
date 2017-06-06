@@ -28,7 +28,6 @@ $vin-red: #ff0000;
 // Layout component styles
 .main-menu a {
   display: inline-block;
-  padding: 10px;
   border: 1px solid blue;
   border-left: none;
   text-transform: capitalize;
@@ -46,5 +45,34 @@ $vin-red: #ff0000;
 
   &.active{
     font-weight: bold;
+  }
+}
+
+.switch-board.solar_system.main-menu{
+
+  a:first-of-type {
+    width: 100%;
+    height: 40px;
+  }
+
+  a {
+    width: 19%; /*because of the borders?*/
+    float: left;
+    height: 250px;
+    border:  1px solid aqua;
+  }
+
+  a.index, a.sun {
+    width: 49%;
+  }
+}
+
+.switch-board.solar_system.details-menu{
+
+  a {
+    width: 19%; /*because of the borders?*/
+    float: left;
+    height: 250px;
+    border:  1px solid aqua;
   }
 }

@@ -18,7 +18,7 @@ export const ITEMS = {
 export const DETAILS = {
  mass: 'mass',
  gravity: 'gravity',
- satelites: 'satelites',
+ satellites: 'satellites',
  orbit: 'orbit',
  nomer1: 'nomer1',
  nomer2: 'nomer2',

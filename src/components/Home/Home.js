@@ -12,7 +12,7 @@ class Home extends React.Component {
     return (
       <main>
         <nav className="left_column">
-          <Link className="home_link" to="solar_system/index">SOLAR SYSTEM</Link>
+          <Link className="home_link" to="solar_system">SOLAR SYSTEM</Link>
           <Link className="home_link" to="stars/index">STARS</Link>
           <Link className="home_link" to="universe/index">UNIVERSE</Link>
         </nav>
