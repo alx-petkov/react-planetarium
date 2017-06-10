@@ -1,4 +1,4 @@
-import { LAYOUT_ACTIONS } from '../constants/actionTypes';
+import { LAYOUT_ACTIONS, LANGUAGE_ACTIONS } from '../constants/actionTypes';
 
 export function loadMenu(section) {
   return {
@@ -23,3 +23,11 @@ export function loadDetail(section, item, detail) {
     detail,
   };
 }
+
+export function changeLanguage() {
+  return {
+    type: LANGUAGE_ACTIONS.CHANGE_LANGUAGE,
+    // newLang,
+  };
+}
+

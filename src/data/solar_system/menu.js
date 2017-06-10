@@ -1,7 +1,6 @@
 import { ITEMS, DETAILS } from '../../constants/solar_system';
 
 
-
 export const menu = {
   main: [
     { EN: ITEMS.index, BG: 'резюме'} ,

@@ -2,7 +2,7 @@ export const SECTIONS = {
   solar_system: 'solar_system',
   stars: 'stars',
   universe: 'universe',
-  sciense: 'sciense',
+  discoverers: 'discoverers',
   exploration: 'exploration',
   fun: 'fun',
 };

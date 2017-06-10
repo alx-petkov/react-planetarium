@@ -11,8 +11,8 @@ const selectFundamentals = (section, item, detail) => {
         return starsBasics[item][detail] || [];
     //case SECTIONS.universe:
         // return universe;
-    //case SECTIONS.sciense:
-    //    return astronomy;
+    //case SECTIONS.discoverers:
+    //    return discoverers;
     default:
     return {};
   }

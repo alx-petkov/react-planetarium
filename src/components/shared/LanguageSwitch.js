@@ -1,13 +1,8 @@
 import React, {PropTypes} from 'react';
 
 class LanguageSwitch extends React.Component {
-  constructor(props, context) {
-    super(props, context);
 
-    this.catch = this.catch.bind(this);
-  }
-
-  catch(event) {
+  reverseLanguage(event) {
     event.preventDefault();
     this.props.changeLanguage();
   }
@@ -16,7 +11,7 @@ class LanguageSwitch extends React.Component {
     return (
       <div
         className={this.props.language}
-        onClick={this.catch}>
+        onClick={(e)=> this.reverseLanguage(e)}>
         { this.props.language }
       </div>
     );
