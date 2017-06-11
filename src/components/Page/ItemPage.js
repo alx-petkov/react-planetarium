@@ -25,13 +25,11 @@ class ItemPage extends React.Component {
   render(){
     const { category, item, detail } = this.props.params;
     const { itemData, language } = this.props;
-    //console.log('itemData', item, itemData);
+    // console.log('itemData', item, itemData ? 'has' : 'not');
     return (
       <div>
-        <h1>{ item } PAGE</h1>
-        { detail }
-
-        <div className={`${category} standard-submenu details-menu`}>
+        <div className={`${category} ${item} item-menu`}>
+          <span className="itemName">{item}</span>
 
           {
             itemData?
@@ -65,11 +63,8 @@ class ItemPage extends React.Component {
               : 'error loading data'
 
           }
-
         </div>
       </div>
-
-
     );
   }
 }

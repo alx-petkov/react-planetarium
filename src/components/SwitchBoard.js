@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
-import { Link, IndexLink } from 'react-router';
-import LanguageSwitch from './shared/LanguageSwitch';
+import { Link } from 'react-router';
+// import LanguageSwitch from './shared/LanguageSwitch';
 // import * as _ from 'lodash';
 // import { menu } from '../data/solar-system/menu';
 
@@ -11,7 +11,7 @@ class Layout extends React.Component {
   componentDidMount() {
     const { category } = this.props.params;
     const { loadMenu } = this.props.actions;
-    console.log('loading', category);
+    // console.log('loading', category);
     loadMenu(category);
   }
 
@@ -28,7 +28,7 @@ class Layout extends React.Component {
     const newCategory = nextProps.params.category;
     if (newCategory !== category){
       const { loadMenu } = this.props.actions;
-      console.log('loading new', category);
+      // console.log('loading new', category);
       loadMenu(newCategory);
     }
 
@@ -45,7 +45,7 @@ class Layout extends React.Component {
 
     return (
       <div>
-        <div className={`${category} switch-board main-menu`}>
+        <div className={`${category} switch-board`}>
           {
             !item ?
             menu.main.map((menuitem, index) =>{

@@ -33,7 +33,7 @@ class Layout extends React.Component {
 
 
   render() {
-    // const { category, item, detail } = this.props.params;
+    const { category } = this.props.params;
     const { language } = this.props;
     const { changeLanguage } = this.props.actions;
     const isEnglish = language.active === LANGUAGES.en;
@@ -46,12 +46,12 @@ class Layout extends React.Component {
       <div>
         <nav className="main-menu">
           <IndexLink to="/">Home</IndexLink>
-          <Link className="home_link" activeClassName="active" to="/solar_system">{ isEnglish? 'SOLAR SYSTEM' : 'СЛЪНЧЕВАТА СИСТЕМА'}</Link>
-          <Link className="home_link" activeClassName="active" to="/stars">{ isEnglish? 'STARS' : 'ЗВЕЗДИТЕ' }</Link>
-          <Link className="home_link" activeClassName="active" to="/universe">{ isEnglish? 'UNIVERSE' : 'ВСЕЛЕНАТА'}</Link>
-          <Link className="home_link" activeClassName="active" to="/discoverers">{ isEnglish? 'DISCOVERERS' : 'ОТКРИВАТЕЛИ' }</Link>
-          <Link className="home_link" activeClassName="active" to="/exploration">{ isEnglish? 'EXPLORATION' : 'КОСМОНАВТИКА'}</Link>
-          <Link className="home_link" activeClassName="active" to="/fun">{ isEnglish? 'FUN': 'ЗАБАВНО' }</Link>
+          <Link className={`home_link ${category === 'solar_system' ? 'active': ''}`}  to="/solar_system">{ isEnglish? 'SOLAR SYSTEM' : 'СЛЪНЧЕВАТА СИСТЕМА'}</Link>
+          <Link className={`home_link ${category === 'stars' ? 'active': ''}`}  to="/stars">{ isEnglish? 'STARS' : 'ЗВЕЗДИТЕ' }</Link>
+          <Link className={`home_link ${category === 'universe' ? 'active': ''}`}  to="/universe">{ isEnglish? 'UNIVERSE' : 'ВСЕЛЕНАТА'}</Link>
+          <Link className={`home_link ${category === 'discoverers' ? 'active': ''}`}  to="/discoverers">{ isEnglish? 'DISCOVERERS' : 'ОТКРИВАТЕЛИ' }</Link>
+          <Link className={`home_link ${category === 'exploration' ? 'active': ''}`}  to="/exploration">{ isEnglish? 'EXPLORATION' : 'КОСМОНАВТИКА'}</Link>
+          <Link className={`home_link ${category === 'fun' ? 'active': ''}`}  to="/fun">{ isEnglish? 'FUN': 'ЗАБАВНО' }</Link>
           <LanguageSwitch
             language={language.other}
             changeLanguage={changeLanguage}

@@ -5,50 +5,46 @@ $vin-red: #ff0000;
 
 /* Styles */
 
-// Homepage component styles
-/*.left_column, toDo delete when homepage is gone
-.right_column {
-  background-color: pink;
-  display: inline-block;
-  width: 25%;
-
-  .home_link {
-    display: block;
-    margin: 40px 0;
-    text-align: center;
-  }
-}
-
-.central_column {
-  width: 50%;
-  text-align: center;
-  display: inline-block;
-}*/
 
 // Layout component styles
-.main-menu a {
-  display: inline-block;
-  border: 1px solid blue;
-  border-left: none;
-  text-transform: capitalize;
-  text-decoration: none;
+.main-menu{
 
-  &.active{
-    background: silver;
-  }
-}
+  background-color: black;
+  color: white;
 
-.details-menu a {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px;
-
-  &.active{
+  a {
+    display: inline-block;
+    /*border: 1px solid blue;*/
+    border-left: none;
+    text-transform: capitalize;
+    text-decoration: none;
     font-weight: bold;
+    color: inherit;
+    padding: 10px;
+
+    &.active {
+      background: gray;
+    }
+  }
+
+  .languageBtn {
+    float: right;
+    border: 1px solid red;
+    padding: 9px;
   }
 }
 
-.switch-board.main-menu{
+  .details-menu a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+
+    &.active{
+      font-weight: bold;
+    }
+  }
+
+.switch-board{
 
   a {
     width: 19%; /*because of the borders?*/
@@ -57,17 +53,35 @@ $vin-red: #ff0000;
     border:  1px solid aqua;
   }
 
-  a.index, a.sun {
+  a.index, a.sun,
+  a.kuiper_belt, a.oort_cloud {
     width: 49%;
   }
+
 }
 
-.switch-board.solar_system.details-menu{
+.item-menu{
+
+  background-color: #60b044;
+  margin: 10px;
+
+  span.itemName {
+    color: black;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+  }
 
   a {
-    width: 19%; /*because of the borders?*/
-    float: left;
-    height: 250px;
-    border:  1px solid aqua;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+
+    &.active {
+      background: green;
+      color: white;
+    }
   }
 }
+

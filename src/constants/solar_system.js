@@ -16,6 +16,7 @@ export const ITEMS = {
 };
 
 export const DETAILS = {
+ index: 'index',
  atmosphere: 'atmosphere',
  gravity: 'gravity',
  satellites: 'satellites',

@@ -10,7 +10,7 @@ class LanguageSwitch extends React.Component {
   render(){
     return (
       <div
-        className={this.props.language}
+        className={`${this.props.language} languageBtn`}
         onClick={(e)=> this.reverseLanguage(e)}>
         { this.props.language }
       </div>

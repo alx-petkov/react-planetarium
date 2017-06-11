@@ -1,10 +1,10 @@
 import { ITEMS } from '../../constants/solar_system';
 // import { index } from './items/index';
 // import { sun } from './items/sun';
-// import { mercury } from './items/mercury';
+import { mercuryData } from './items/mercury';
 import { venusData } from './items/venus';
 import { earthData } from './items/earth';
-//import { mars } from './items/mars';
+import { marsData } from './items/mars';
 //import { ceres } from './items/ceres';
 //import { jupiter } from './items/jupiter';
 //import { saturn } from './items/saturn';
@@ -19,10 +19,10 @@ import { earthData } from './items/earth';
 export const solarSystemItems = {
   // [ITEMS.index]: index,
   // [ITEMS.sunn]: sun,
-  // [ITEMS.mercury]: mercury,
+  [ITEMS.mercury]: mercuryData,
   [ITEMS.venus]: venusData,
   [ITEMS.earth]: earthData,
-  // [ITEMS.mars]: mars,
+  [ITEMS.mars]: marsData,
   // [ITEMS.ceres]: ceres,
   // [ITEMS.jupiter]: jupiter,
   // [ITEMS.saturn]: saturn,
