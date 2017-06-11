@@ -16,11 +16,12 @@ export const ITEMS = {
 };
 
 export const DETAILS = {
- mass: 'mass',
+ atmosphere: 'atmosphere',
  gravity: 'gravity',
  satellites: 'satellites',
  orbit: 'orbit',
- nomer1: 'nomer1',
- nomer2: 'nomer2',
- nomer3: 'nomer3',
+ rotation: 'rotation',
+ features: 'features',
+ size: 'size',
+ structure: 'structure',
 };

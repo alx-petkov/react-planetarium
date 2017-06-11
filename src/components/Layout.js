@@ -13,16 +13,16 @@ class Layout extends React.Component {
   //   loadMenu(category);
   // }
 
-  shouldComponentUpdate(nextProps /*, nextState*/){
-    // return a boolean value
-
-    const { category } = this.props.params;
-    const { active } = this.props.language;
-    const newCategory = nextProps.params.category;
-    const newLanguage = nextProps.language.active;
-    // console.log('SHUOLD BE UPDATING?', newCategory, category );
-    return (newCategory !== category || active !== newLanguage);
-  }
+  // shouldComponentUpdate(nextProps /*, nextState*/){
+  //   // return a boolean value
+//
+  //   const { category } = this.props.params;
+  //   const { active } = this.props.language;
+  //   const newCategory = nextProps.params.category;
+  //   const newLanguage = nextProps.language.active;
+  //   // console.log('SHUOLD BE UPDATING?', newCategory, category );
+  //   return (newCategory !== category || active !== newLanguage);
+  // }
 
 
   // componentWillUpdate(nextProps /*, nextState*/){
@@ -33,11 +33,11 @@ class Layout extends React.Component {
 
 
   render() {
-    const { category, item, detail } = this.props.params;
-    const { menu, language } = this.props;
+    // const { category, item, detail } = this.props.params;
+    const { language } = this.props;
     const { changeLanguage } = this.props.actions;
     const isEnglish = language.active === LANGUAGES.en;
-    console.log(language);
+    // console.log(language);
 
     // const menuStyle = item ? 'standard-menu' : 'switch-board';
     // const submenuStyle = detail? 'standard-submenu' : 'switch-board';
@@ -74,23 +74,6 @@ class Layout extends React.Component {
             //   : item
           }
         {/*</div>*/}
-        <div className={`${category} ${item} standard-submenu details-menu`}>
-          {
-            item?
-            menu.submenu.map((subitem, index) =>{
-              return (
-                <Link
-                key={index}
-                to={`/${category}/${item}/${subitem.EN}`}
-                activeClassName="active"
-                >
-                  { subitem[language.active] }
-                </Link>
-              );
-            })
-              : ''
-          }
-        </div>
         {this.props.children}
       </div>
     );

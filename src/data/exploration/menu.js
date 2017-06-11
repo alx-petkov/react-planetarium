@@ -4,13 +4,13 @@ export const menu = {
   main: [
     { EN: 'Gagarin', BG:  'Гагарин'} ,
     { EN: 'Armstrong', BG:  'Армстронг'} ,
-    { EN: 'Sputnik', BG:  'Спутник'} ,
-    { EN: 'Voyager', BG: 'Вояджър'} ,
-    { EN: 'MIR', BG: 'МИР'} ,
+    { EN: 'Sputnik', BG:  'Спутник'} , // спутник, вояджър и др
+    { EN: 'ships', BG: 'кораби'} , // Восток, Сатурн, Джемини, Совалката, Space X, Virgin Galactic, проекти,
+    { EN: 'orbital_stations', BG: 'орбитални станции'} , // Мир, МКС, китайска станция (?), проекти
     { EN: 'ISS', BG: 'МКС'} ,
-    { EN: 'probes', BG: 'сонди'} ,
+    { EN: 'robots', BG: 'роботи'} , // марсоходи, луноходи...
     { EN: 'space_junk', BG: 'орбитални боклуци'} ,
     { EN: 'agencies', BG: 'агенции'} ,
-    { EN: 'equipment', BG: 'екипировка'} ,
+    { EN: 'equipment', BG: 'екипировка'} , // скафандри, храна, др.
   ]
 };

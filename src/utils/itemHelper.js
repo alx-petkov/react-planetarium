@@ -1,13 +1,13 @@
 import { SECTIONS } from '../constants/sections';
-import { solarSystemBasics } from '../data/solar_system/basics';
+import { solarSystemItems } from '../data/solar_system/items';
 import { starsBasics } from '../data/stars/basics';
 import { menu as universe } from '../data/universe/menu';
 // import { menu as stars } from '../data/stars/menu';
 
-const selectFundamentals = (section, item) => {
+const selectItem = (section, item) => {
   switch (section) {
     case SECTIONS.solar_system:
-      return solarSystemBasics[item] || [];
+      return solarSystemItems[item] || [];
     case SECTIONS.stars:
         return starsBasics[item];
     case SECTIONS.universe:
@@ -19,4 +19,4 @@ const selectFundamentals = (section, item) => {
   }
 };
 
-export default selectFundamentals;
+export default selectItem;

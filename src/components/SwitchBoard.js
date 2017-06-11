@@ -42,7 +42,6 @@ class Layout extends React.Component {
     // const menuStyle = item ? 'standard-menu' : 'switch-board';
     // const submenuStyle = detail? 'standard-submenu' : 'switch-board';
 
-    console.log(this.props.actions);
 
     return (
       <div>
@@ -53,7 +52,7 @@ class Layout extends React.Component {
               return (
                 <Link
                 key={index}
-                to={`/${category}/${menuitem.EN}`}
+                to={`/${category}/${menuitem.EN}/index`}
                 className={`${menuitem.EN} ${menuitem.EN === item ? 'active' : ''}`}
                 >
                   { menuitem[language.active] }

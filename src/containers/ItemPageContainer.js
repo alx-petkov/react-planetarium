@@ -2,15 +2,15 @@ import React, {PropTypes} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as actions from '../actions/layoutActions';
-import DetailSection from '../components/Page/DetailSection';
+import ItemPage from '../components/Page/ItemPage';
 
-export const LayoutContainer = (props) => {
+export const ItemDetails = (props) => {
   return (
-    <DetailSection {...props}  />
+    <ItemPage {...props}  />
   );
 };
 
-LayoutContainer.propTypes = {
+ItemDetails.propTypes = {
   actions: PropTypes.object.isRequired,
   language: PropTypes.object.isRequired,
 };
@@ -18,7 +18,7 @@ LayoutContainer.propTypes = {
 function mapStateToProps(state) {
   return {
     language: state.language,
-    detail: state.layout.detail,
+    itemData: state.layout.item,
   };
 }
 
@@ -31,4 +31,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(LayoutContainer);
+)(ItemDetails);

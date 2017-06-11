@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+/*import React, {PropTypes} from 'react';
 import {Link} from 'react-router';
 import LanguageSwitch from '../shared/LanguageSwitch';
 
@@ -13,7 +13,7 @@ class Home extends React.Component {
       <main>
 
 
-        <div className="central_column"> {/* ToDo symbolic model of the solar system */}
+        <div className="central_column"> // ToDo symbolic model of the solar system
           <h1>HOME</h1>
         </div>
         <LanguageSwitch
@@ -34,4 +34,4 @@ Home.propTypes = {
   actions: PropTypes.object,
 };
 
-export default Home;
+export default Home;*/

@@ -11,7 +11,7 @@ export const menu = {
     { EN: 'supernovae', BG: 'супернова'} ,
     { EN: 'black_hole', BG: 'черна дупка'} ,
     { EN: 'blue-giant', BG: 'син гигант'} ,
-    { EN: 'summary', BG: 'резюме'} ,
+    { EN: 'exoplanets', BG: 'екзопланети'} ,
     { EN: 'summary', BG: 'резюме'} ,
   ],
   submenu: [
